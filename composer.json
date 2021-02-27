@@ -1,0 +1,21 @@
+{
+    "name": "mogublog/guzzle",
+    "description": "Guzzle is a PHP HTTP client library",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*",
+        "guzzlehttp/promises": "1.4.0",
+        "guzzlehttp/psr7": "1.7.0",
+        "psr/http-client": "1.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "GuzzleHttp\\": "src/"
+        },
+        "files": [
+            "src/functions_include.php"
+        ]
+    }
+}
