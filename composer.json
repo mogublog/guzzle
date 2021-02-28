@@ -5,17 +5,20 @@
     "license": "MIT",
     "require": {
         "php": ">=7.4",
-        "ext-json": "*",
-        "guzzlehttp/promises": "1.4.0",
-        "guzzlehttp/psr7": "1.7.0",
-        "psr/http-client": "1.0.1"
+        "ext-json": "*"
     },
     "autoload": {
         "psr-4": {
-            "GuzzleHttp\\": "src/"
+            "GuzzleHttp\\": "src/guzzle/",
+            "GuzzleHttp\\Promise\\": "src/promises/",
+            "GuzzleHttp\\Psr7\\": "src/psr7/",
+            "Psr\\Http\\Client\\": "src/http-client/",
+            "Psr\\Http\\Message\\": "src/http-message/"
         },
         "files": [
-            "src/functions_include.php"
+            "src/guzzle/functions_include.php",
+            "src/promises/functions_include.php",
+            "src/psr7/functions_include.php"
         ]
     }
 }
